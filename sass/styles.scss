@@ -4,11 +4,7 @@ body {
 	min-height: 100%;
 	color: white;
 	font-family: 'Comic Sans MS';
-	-moz-transition: color  1s;
-	-webkit-transition: color 1s;
-	-o-transition: color  1s;
-	-ms-transition: color 1s;
-	transition: color 1s;
+	margin: 0;
 }
 
 #jedface {
@@ -21,12 +17,25 @@ body {
 
 #content {
 	text-align: center;
+	width: 100%;
+	position: absolute;
+	min-height: 1000px;
+
+	.grower {
+		min-height: 400px;
+		width: 100%;
+		position: absolute;
+	}
+
+	.the-rest {
+		margin-top: 400px;
+	}
 }
 
 .color-change {
 	background-color: #C30;
 	border: medium solid #FF0;
-	padding-top: 5px; padding-right: 7px; padding-bottom: 7px; padding-left: 7px;
+	// padding-top: 5px; padding-right: 7px; padding-bottom: 7px; padding-left: 7px;
 	color: #FFF;
 	text-align: center;
 	animation-name: homeCycle;
