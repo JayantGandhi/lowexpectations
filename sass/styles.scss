@@ -63,7 +63,7 @@ body {
 	75% {background-color:#603;}
 }
 
-.rotate-me {
+.rotate-me:hover {
 	animation: rotateMe 4s linear infinite;
 	// animation-duration:6s;
 	// // animation-direction:alternate;

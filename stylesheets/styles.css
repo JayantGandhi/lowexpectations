@@ -96,7 +96,7 @@ body {
 }
 
 /* line 66, ../sass/styles.scss */
-.rotate-me {
+.rotate-me:hover {
   animation: rotateMe 4s linear infinite;
   -webkit-animation: rotateMe 4s linear infinite;
 }
