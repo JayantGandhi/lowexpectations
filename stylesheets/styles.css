@@ -6,36 +6,41 @@ body {
   color: white;
   font-family: 'Comic Sans MS';
   margin: 0;
+  position: relative;
+}
+/* line 10, ../sass/styles.scss */
+body a {
+  position: relative;
 }
 
-/* line 10, ../sass/styles.scss */
+/* line 15, ../sass/styles.scss */
 #jedface {
   position: absolute;
 }
-/* line 13, ../sass/styles.scss */
+/* line 18, ../sass/styles.scss */
 #jedface #sparkles {
   position: absolute;
 }
 
-/* line 18, ../sass/styles.scss */
+/* line 23, ../sass/styles.scss */
 #content {
   text-align: center;
   width: 100%;
   position: absolute;
   min-height: 1000px;
 }
-/* line 24, ../sass/styles.scss */
+/* line 29, ../sass/styles.scss */
 #content .grower {
   min-height: 400px;
   width: 100%;
   position: absolute;
 }
-/* line 30, ../sass/styles.scss */
+/* line 35, ../sass/styles.scss */
 #content .the-rest {
   margin-top: 400px;
 }
 
-/* line 35, ../sass/styles.scss */
+/* line 40, ../sass/styles.scss */
 .color-change {
   background-color: #C30;
   border: medium solid #FF0;
@@ -52,57 +57,57 @@ body {
 }
 
 @keyframes homeCycle {
-  /* line 53, ../sass/styles.scss */
+  /* line 58, ../sass/styles.scss */
   0% {
     background-color: #006;
   }
 
-  /* line 54, ../sass/styles.scss */
+  /* line 59, ../sass/styles.scss */
   25% {
     background-color: #060;
   }
 
-  /* line 55, ../sass/styles.scss */
+  /* line 60, ../sass/styles.scss */
   50% {
     background-color: #CC3200;
   }
 
-  /* line 56, ../sass/styles.scss */
+  /* line 61, ../sass/styles.scss */
   75% {
     background-color: #603;
   }
 }
 
 @-webkit-keyframes homeCycle {
-  /* line 60, ../sass/styles.scss */
+  /* line 65, ../sass/styles.scss */
   0% {
     background-color: #006;
   }
 
-  /* line 61, ../sass/styles.scss */
+  /* line 66, ../sass/styles.scss */
   25% {
     background-color: #060;
   }
 
-  /* line 62, ../sass/styles.scss */
+  /* line 67, ../sass/styles.scss */
   50% {
     background-color: #CC3200;
   }
 
-  /* line 63, ../sass/styles.scss */
+  /* line 68, ../sass/styles.scss */
   75% {
     background-color: #603;
   }
 }
 
-/* line 66, ../sass/styles.scss */
+/* line 71, ../sass/styles.scss */
 .rotate-me:hover {
   animation: rotateMe 4s linear infinite;
   -webkit-animation: rotateMe 4s linear infinite;
 }
 
 @keyframes rotateMe {
-  /* line 79, ../sass/styles.scss */
+  /* line 84, ../sass/styles.scss */
   100% {
     transform: rotate(360deg);
     -moz-transform: rotate(360deg);
@@ -110,7 +115,7 @@ body {
 }
 
 @-webkit-keyframes rotateMe {
-  /* line 86, ../sass/styles.scss */
+  /* line 91, ../sass/styles.scss */
   100% {
     -webkit-transform: rotate(360deg);
   }
