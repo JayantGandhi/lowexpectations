@@ -1,0 +1,13 @@
+/* line 1, ../sass/styles.scss */
+body {
+  background-image: url("http://www.geocities.com/clipart/pbi/backgrounds/Generic/blackwav.gif");
+  width: 100%;
+  min-height: 100%;
+  color: white;
+  font-family: 'Comic Sans MS';
+}
+
+/* line 9, ../sass/styles.scss */
+#explosion {
+  position: absolute;
+}
