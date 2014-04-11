@@ -4,6 +4,11 @@ body {
 	min-height: 100%;
 	color: white;
 	font-family: 'Comic Sans MS';
+	-moz-transition: color  1s;
+	-webkit-transition: color 1s;
+	-o-transition: color  1s;
+	-ms-transition: color 1s;
+	transition: color 1s;
 }
 
 #explosion {
