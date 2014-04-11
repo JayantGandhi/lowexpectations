@@ -1,6 +1,6 @@
 /* line 1, ../sass/styles.scss */
 body {
-  background-image: url("http://www.geocities.com/clipart/pbi/backgrounds/Generic/blackwav.gif");
+  background-image: url("http://www.geocities.com/clipart/pbi/backgrounds/Generic/funky.gif");
   width: 100%;
   min-height: 100%;
   color: white;
@@ -19,4 +19,73 @@ body {
 /* line 17, ../sass/styles.scss */
 #jedface #sparkles {
   position: absolute;
+}
+
+/* line 22, ../sass/styles.scss */
+#content {
+  text-align: center;
+}
+
+/* line 26, ../sass/styles.scss */
+.color-change {
+  background-color: #C30;
+  border: medium solid #FF0;
+  padding-top: 5px;
+  padding-right: 7px;
+  padding-bottom: 7px;
+  padding-left: 7px;
+  color: #FFF;
+  text-align: center;
+  animation-name: homeCycle;
+  animation-duration: 6s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: homeCycle;
+  -webkit-animation-duration: 6s;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes homeCycle {
+  /* line 44, ../sass/styles.scss */
+  0% {
+    background-color: #006;
+  }
+
+  /* line 45, ../sass/styles.scss */
+  25% {
+    background-color: #060;
+  }
+
+  /* line 46, ../sass/styles.scss */
+  50% {
+    background-color: #CC3200;
+  }
+
+  /* line 47, ../sass/styles.scss */
+  75% {
+    background-color: #603;
+  }
+}
+
+@-webkit-keyframes homeCycle {
+  /* line 51, ../sass/styles.scss */
+  0% {
+    background-color: #006;
+  }
+
+  /* line 52, ../sass/styles.scss */
+  25% {
+    background-color: #060;
+  }
+
+  /* line 53, ../sass/styles.scss */
+  50% {
+    background-color: #CC3200;
+  }
+
+  /* line 54, ../sass/styles.scss */
+  75% {
+    background-color: #603;
+  }
 }
