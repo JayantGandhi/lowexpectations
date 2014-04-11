@@ -13,6 +13,10 @@ body {
 }
 
 /* line 14, ../sass/styles.scss */
-#explosion {
+#jedface {
+  position: absolute;
+}
+/* line 17, ../sass/styles.scss */
+#jedface #sparkles {
   position: absolute;
 }
