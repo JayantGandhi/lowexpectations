@@ -62,3 +62,26 @@ body {
 	50% {background-color:#CC3200;}
 	75% {background-color:#603;}
 }
+
+.rotate-me {
+	animation: rotateMe 4s linear infinite;
+	// animation-duration:6s;
+	// // animation-direction:alternate;
+	// animation-iteration-count:infinite;
+
+	-webkit-animation: rotateMe 4s linear infinite;
+	// -webkit-animation-duration:6s;
+	// // -webkit-animation-direction:alternate;
+	// -webkit-animation-iteration-count:infinite;
+}
+
+@keyframes rotateMe {
+	100% {
+		transform:rotate(360deg);
+		-moz-transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes rotateMe {
+	100% {-webkit-transform: rotate(360deg);}
+}
