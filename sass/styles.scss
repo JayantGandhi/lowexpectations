@@ -1,11 +1,92 @@
 body {
-	background-image: url('http://www.geocities.com/clipart/pbi/backgrounds/Generic/blackwav.gif');
+	background-image: url('http://www.geocities.com/clipart/pbi/backgrounds/Generic/funky.gif');
 	width: 100%;
 	min-height: 100%;
 	color: white;
 	font-family: 'Comic Sans MS';
+	margin: 0;
+	position: relative;
+
+	a {
+		position: relative;
+	}
 }
 
-#explosion {
+#jedface {
 	position: absolute;
+
+	#sparkles {
+		position: absolute;
+	}
+}
+
+#content {
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	min-height: 1000px;
+
+	.grower {
+		min-height: 400px;
+		width: 100%;
+		position: absolute;
+	}
+
+	.the-rest {
+		margin-top: 400px;
+	}
+}
+
+.color-change {
+	background-color: #C30;
+	border: medium solid #FF0;
+	// padding-top: 5px; padding-right: 7px; padding-bottom: 7px; padding-left: 7px;
+	color: #FFF;
+	text-align: center;
+	animation-name: homeCycle;
+	animation-duration:6s;
+	animation-direction:alternate;
+	animation-iteration-count:infinite;
+
+	-webkit-animation-name: homeCycle;
+	-webkit-animation-duration:6s;
+	-webkit-animation-direction:alternate;
+	-webkit-animation-iteration-count:infinite;
+}
+
+@keyframes homeCycle {
+	0% {background-color:#006;}
+	25% {background-color:#060;}
+	50% {background-color:#CC3200;}
+	75% {background-color:#603;}
+}
+
+@-webkit-keyframes homeCycle {
+	0% {background-color:#006;}
+	25% {background-color:#060;}
+	50% {background-color:#CC3200;}
+	75% {background-color:#603;}
+}
+
+.rotate-me:hover {
+	animation: rotateMe 4s linear infinite;
+	// animation-duration:6s;
+	// // animation-direction:alternate;
+	// animation-iteration-count:infinite;
+
+	-webkit-animation: rotateMe 4s linear infinite;
+	// -webkit-animation-duration:6s;
+	// // -webkit-animation-direction:alternate;
+	// -webkit-animation-iteration-count:infinite;
+}
+
+@keyframes rotateMe {
+	100% {
+		transform:rotate(360deg);
+		-moz-transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes rotateMe {
+	100% {-webkit-transform: rotate(360deg);}
 }

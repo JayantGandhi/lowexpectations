@@ -1,13 +1,122 @@
 /* line 1, ../sass/styles.scss */
 body {
-  background-image: url("http://www.geocities.com/clipart/pbi/backgrounds/Generic/blackwav.gif");
+  background-image: url("http://www.geocities.com/clipart/pbi/backgrounds/Generic/funky.gif");
   width: 100%;
   min-height: 100%;
   color: white;
   font-family: 'Comic Sans MS';
+  margin: 0;
+  position: relative;
+}
+/* line 10, ../sass/styles.scss */
+body a {
+  position: relative;
 }
 
-/* line 9, ../sass/styles.scss */
-#explosion {
+/* line 15, ../sass/styles.scss */
+#jedface {
   position: absolute;
+}
+/* line 18, ../sass/styles.scss */
+#jedface #sparkles {
+  position: absolute;
+}
+
+/* line 23, ../sass/styles.scss */
+#content {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  min-height: 1000px;
+}
+/* line 29, ../sass/styles.scss */
+#content .grower {
+  min-height: 400px;
+  width: 100%;
+  position: absolute;
+}
+/* line 35, ../sass/styles.scss */
+#content .the-rest {
+  margin-top: 400px;
+}
+
+/* line 40, ../sass/styles.scss */
+.color-change {
+  background-color: #C30;
+  border: medium solid #FF0;
+  color: #FFF;
+  text-align: center;
+  animation-name: homeCycle;
+  animation-duration: 6s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: homeCycle;
+  -webkit-animation-duration: 6s;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes homeCycle {
+  /* line 58, ../sass/styles.scss */
+  0% {
+    background-color: #006;
+  }
+
+  /* line 59, ../sass/styles.scss */
+  25% {
+    background-color: #060;
+  }
+
+  /* line 60, ../sass/styles.scss */
+  50% {
+    background-color: #CC3200;
+  }
+
+  /* line 61, ../sass/styles.scss */
+  75% {
+    background-color: #603;
+  }
+}
+
+@-webkit-keyframes homeCycle {
+  /* line 65, ../sass/styles.scss */
+  0% {
+    background-color: #006;
+  }
+
+  /* line 66, ../sass/styles.scss */
+  25% {
+    background-color: #060;
+  }
+
+  /* line 67, ../sass/styles.scss */
+  50% {
+    background-color: #CC3200;
+  }
+
+  /* line 68, ../sass/styles.scss */
+  75% {
+    background-color: #603;
+  }
+}
+
+/* line 71, ../sass/styles.scss */
+.rotate-me:hover {
+  animation: rotateMe 4s linear infinite;
+  -webkit-animation: rotateMe 4s linear infinite;
+}
+
+@keyframes rotateMe {
+  /* line 84, ../sass/styles.scss */
+  100% {
+    transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotateMe {
+  /* line 91, ../sass/styles.scss */
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
